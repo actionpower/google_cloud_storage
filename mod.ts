@@ -1,5 +1,4 @@
 import dayjs from "https://esm.sh/dayjs@v1.11.9";
-import { FormDataFile } from "../deps.ts";
 import { create, type Header } from "https://deno.land/x/djwt@v2.9.1/mod.ts";
 
 type ServiceAccount = {
@@ -15,6 +14,14 @@ type ServiceAccount = {
   client_x509_cert_url: string;
   universe_domain: string;
 };
+
+type FormDataFile = {
+  content?: Uint8Array;
+  contentType: string;
+  filename?: string
+  name: string;
+  originalName: string
+}
 
 function str2ab(value: string) {
   const buf = new ArrayBuffer(value.length);

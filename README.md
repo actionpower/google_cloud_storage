@@ -29,11 +29,11 @@ const signedUrl = await storage.getSignedUrl(objectName, 900);
   "project_id": "your-project-id",
   "private_key_id": "01234567890",
   "private_key": "-----BEGIN PRIVATE KEY-----YOUR PRIVATE KEY-----END PRIVATE KEY-----",
-  "client_email": "service-acct@<your-poject-id>.iam.gserviceaccount.com",
+  "client_email": "service-account@<your-poject-id>.iam.gserviceaccount.com",
   "client_id": "01234567890",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-acct%40your-service-account-name.iam.gserviceaccount.com"
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-account%40your-service-account-name.iam.gserviceaccount.com"
 }
 ```
